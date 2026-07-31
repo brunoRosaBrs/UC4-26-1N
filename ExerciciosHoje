@@ -1,0 +1,136 @@
+// EXERCICIO 1 
+export class Person{
+    private name: string;
+    private age: number;
+
+    public constructor(name: string, age: number) {
+        this.age = age;
+        this.name = name;
+    }
+//Getter
+public getName(): string {
+    return this.name;
+}
+public getAge(): number {
+    return this.age;
+}
+
+//Setter
+public setName(newName: string): void {
+    this.name = newName;
+}
+public setAge(newAge: number): void {
+    if (newAge >= 0) {
+        this.age = newAge;
+    } else {
+        console.log("Age cannot be negative.");
+    }
+}
+
+//Método
+
+public introduce(): void {
+    console.log(`Hello! My name is ${this.name} and I am ${this.age} years old.`)
+}
+}
+
+
+//////
+
+// EXERCICIO 2
+export class Car{
+    private brand: string
+    private model:string
+    private year: number
+    private speed: number
+
+    public constructor(brand: string, model: string, year: number) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.speed = 0;
+    }
+
+    //Getter
+    public getBrand(): string{
+        return this.brand
+    };
+    public getModel(): string{
+        return this.model
+    };
+    public getYear(): number{
+        return this.year
+    };
+    public getSpeed(): number{
+        return this.speed
+    };
+
+    //Setter
+    public setBrand(newBrand: string): void {
+        this.brand = newBrand;
+    }
+    public setModel(newModel: string): void{
+        this.model = newModel;
+    }
+    public setYear(newYear: number): void{
+        this.year = newYear;
+    }
+
+    //MÉTODOS
+    public accelerate(value: number): void {
+        if (value > 0){
+        this.speed = this.speed + value;
+    }
+    }
+
+    public brake(value: number): void {
+        this.speed = this.speed - value;
+        if (this.speed < 0) {
+            this.speed = 0;
+        }
+    }
+
+    public showInformation(): void {
+        console.log(`Car: ${this.brand} ${this.model} (${this.year}) > Speed: ${this.speed} km/h`);
+    }
+}
+        
+//////////
+
+/*
+//EXERCICIO 1
+import { Person } from "./Person";
+function testExercicio1() {
+    const Person1 = new Person("Bruno", 29);
+    const Person2 = new Person("Maria", 30);
+    Person1.introduce();
+    Person2.introduce();
+
+    //Alterando idade:
+    Person1.setAge(26);
+    //Imprime a nova idade
+    console.log("Nova idade:");
+    Person1.introduce();
+}
+
+testExercicio1();
+*/
+
+
+//EXERCICIO 2:
+import { Car } from "./Car";
+
+function testExercicio2() {
+  const Car1 = new Car("Toyota", "Corolla", 2022);
+  Car1.accelerate(30);
+  Car1.accelerate(50);
+  Car1.showInformation();
+
+  Car1.brake(40);
+  Car1.showInformation();
+
+  Car1.brake(100);
+  Car1.showInformation();
+}
+
+testExercicio2();
