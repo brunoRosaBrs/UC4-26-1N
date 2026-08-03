@@ -1,3 +1,468 @@
+MAIN----------
+/*
+//EXERCICIO 1
+import { Person } from "./Person";
+function testExercicio1() {
+    const Person1 = new Person("Bruno", 29);
+    const Person2 = new Person("Maria", 30);
+    Person1.introduce();
+    Person2.introduce();
+
+    //Alterando idade:
+    Person1.setAge(26);
+    //Imprime a nova idade
+    console.log("Nova idade:");
+    Person1.introduce();
+}
+
+testExercicio1();
+*/
+
+
+
+
+/*
+//EXERCICIO 2:
+import { Car } from "./Car";
+
+function testExercicio2() {
+  const Car1 = new Car("Toyota", "Corolla", 2022);
+  Car1.accelerate(30);
+  Car1.accelerate(50);
+  Car1.showInformation();
+
+  Car1.brake(40);
+  Car1.showInformation();
+
+  Car1.brake(100);
+  Car1.showInformation();
+}
+
+testExercicio2();
+*/
+
+
+
+
+/*
+//EXERCICIO 3:
+import { BankAccount } from "./BankAccount";
+
+function testExercicio3() {
+    const account1 = new BankAccount("Bruno", 1000);
+
+    account1.showBalance();
+
+    account1.deposit(500);
+    account1.showBalance();
+
+    account1.deposit(200);
+    account1.showBalance();
+
+    account1.withdraw(300);
+    account1.showBalance();
+
+    account1.withdraw(2000);
+    account1.showBalance();
+}
+
+testExercicio3();
+*/
+
+
+
+
+/*
+//EXERCICIO 4:
+import { Product } from "./Product";
+
+function testExercicio4() {
+
+    const product1 = new Product("Notebook", 3000, 10);
+    const product2 = new Product("Mouse", 100, 20);
+    const product3 = new Product("Keyboard", 200, 15);
+
+    console.log("PRODUCT 1");
+    product1.showProduct();
+
+    product1.addStock(5);
+    product1.removeStock(3);
+
+    console.log("After stock changes:");
+    product1.showProduct();
+
+
+    console.log("--------------------");
+
+
+    console.log("PRODUCT 2");
+    product2.showProduct();
+
+    product2.addStock(10);
+    product2.removeStock(5);
+
+    console.log("After stock changes:");
+    product2.showProduct();
+
+
+    console.log("--------------------");
+
+
+    console.log("PRODUCT 3");
+    product3.showProduct();
+
+    product3.addStock(5);
+    product3.removeStock(2);
+
+    console.log("After stock changes:");
+    product3.showProduct();
+}
+
+testExercicio4();
+*/
+
+
+
+
+
+
+
+
+/*
+//EXERCICIO 5:
+import { Book } from "./Book";
+
+function testExercicio5() {
+
+    const book1 = new Book(
+        "The Hobbit",
+        "J.R.R. Tolkien",
+        310,
+        true
+    );
+
+    const book2 = new Book(
+        "Harry Potter",
+        "J.K. Rowling",
+        400,
+        true
+    );
+
+    console.log("BOOK 1");
+    book1.showInformation();
+
+    book1.borrow();
+
+    console.log("After borrowing:");
+    book1.showInformation();
+
+    book1.borrow();
+
+    book1.returnBook();
+
+    console.log("After returning:");
+    book1.showInformation();
+
+
+    console.log("--------------------");
+
+
+    console.log("BOOK 2");
+    book2.showInformation();
+
+    book2.borrow();
+
+    console.log("After borrowing:");
+    book2.showInformation();
+
+    book2.returnBook();
+
+    console.log("After returning:");
+    book2.showInformation();
+}
+
+testExercicio5();
+*/
+
+
+
+
+
+
+/*
+//EXERCICIO 6: 
+import { Student } from "./Student";
+
+function testExercicio6() {
+
+    const student1 = new Student("Bruno", 8, 9);
+    const student2 = new Student("Leonardo", 6, 5);
+    const student3 = new Student("Ana", 7, 7);
+
+    console.log("STUDENT 1");
+
+    console.log(`Name: ${student1.getName()}`);
+    console.log(`Average: ${student1.calculateAverage()}`);
+
+    if (student1.approved()) {
+        console.log("Approved!");
+    } else {
+        console.log("Not approved.");
+    }
+
+
+    console.log("--------------------");
+
+
+    console.log("STUDENT 2");
+
+    console.log(`Name: ${student2.getName()}`);
+    console.log(`Average: ${student2.calculateAverage()}`);
+
+    if (student2.approved()) {
+        console.log("Approved!");
+    } else {
+        console.log("Not approved.");
+    }
+
+
+    console.log("--------------------");
+
+
+    console.log("STUDENT 3");
+
+    console.log(`Name: ${student3.getName()}`);
+    console.log(`Average: ${student3.calculateAverage()}`);
+
+    if (student3.approved()) {
+        console.log("Approved!");
+    } else {
+        console.log("Not approved.");
+    }
+}
+
+testExercicio6();
+*/
+
+
+
+
+/* 
+//EXERCICIO 7:
+import { Employee } from "./Employee";
+
+function testExercicio7() {
+
+    const employee1 = new Employee("Bruno", 3000);
+    const employee2 = new Employee("Leonardo", 5000);
+
+    console.log("EMPLOYEE 1 - BEFORE INCREASE");
+
+    employee1.showInformation();
+
+    employee1.increaseSalary(10);
+
+    console.log("EMPLOYEE 1 - AFTER INCREASE");
+
+    employee1.showInformation();
+
+
+    console.log("--------------------");
+
+
+    console.log("EMPLOYEE 2 - BEFORE INCREASE");
+
+    employee2.showInformation();
+
+    employee2.increaseSalary(20);
+
+    console.log("EMPLOYEE 2 - AFTER INCREASE");
+
+    employee2.showInformation();
+}
+
+testExercicio7();
+*/
+
+
+
+
+/*
+//EXERCICIO 8:
+import { Movie } from "./Movie";
+
+function testExercicio8() {
+
+    const movie1 = new Movie(
+        "The Lord of the Rings",
+        178,
+        9
+    );
+
+    const movie2 = new Movie(
+        "The Matrix",
+        136,
+        8
+    );
+
+    const movie3 = new Movie(
+        "Interstellar",
+        169,
+        9.5
+    );
+
+
+    console.log("MOVIE 1");
+
+    movie1.showMovie();
+
+    movie1.changeRating(10);
+
+    console.log("After changing rating:");
+
+    movie1.showMovie();
+
+
+    console.log("--------------------");
+
+
+    console.log("MOVIE 2");
+
+    movie2.showMovie();
+
+    movie2.changeRating(9);
+
+    console.log("After changing rating:");
+
+    movie2.showMovie();
+
+
+    console.log("--------------------");
+
+
+    console.log("MOVIE 3");
+
+    movie3.showMovie();
+
+    movie3.changeRating(8.5);
+
+    console.log("After changing rating:");
+
+    movie3.showMovie();
+}
+
+testExercicio8();
+*/
+
+
+
+/*
+//EXERCICIO 9: 
+import { Smartphone } from "./Smartphone";
+
+function testExercicio9() {
+
+    const smartphone1 = new Smartphone(
+        "Samsung",
+        "Galaxy S25"
+    );
+
+    console.log("SMARTPHONE");
+
+    smartphone1.showInformation();
+
+    smartphone1.use(20);
+
+    console.log("After using the smartphone:");
+
+    smartphone1.showInformation();
+
+    smartphone1.use(30);
+
+    console.log("After using the smartphone again:");
+
+    smartphone1.showInformation();
+
+    smartphone1.charge();
+
+    console.log("After charging:");
+
+    smartphone1.showInformation();
+}
+
+testExercicio9();
+*/
+
+
+
+/*
+//EXERCICIO 10:
+import { LibraryMember } from "./LibraryMember";
+
+function testExercicio10() {
+
+    const member1 = new LibraryMember("Bruno");
+    const member2 = new LibraryMember("Leonardo");
+
+
+    console.log("MEMBER 1");
+
+    member1.showInformation();
+
+    member1.borrowBook();
+    member1.borrowBook();
+    member1.borrowBook();
+
+    console.log("After borrowing 3 books:");
+
+    member1.showInformation();
+
+    // Tentando pegar o quarto livro
+    member1.borrowBook();
+
+    member1.returnBook();
+
+    console.log("After returning 1 book:");
+
+    member1.showInformation();
+
+
+    console.log("--------------------");
+
+
+    console.log("MEMBER 2");
+
+    member2.showInformation();
+
+    member2.borrowBook();
+    member2.borrowBook();
+
+    console.log("After borrowing 2 books:");
+
+    member2.showInformation();
+
+    member2.returnBook();
+
+    console.log("After returning 1 book:");
+
+    member2.showInformation();
+
+    // Tentando devolver quando não há livros
+    member2.returnBook();
+    member2.returnBook();
+
+    console.log("Final information:");
+
+    member2.showInformation();
+}
+
+testExercicio10();
+*/
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
 // EXERCICIO 1 
 export class Person{
     private name: string;
@@ -35,8 +500,9 @@ public introduce(): void {
 }
 
 
-//////
 
+
+-----------------------
 // EXERCICIO 2
 export class Car{
     private brand: string
@@ -94,43 +560,538 @@ export class Car{
         console.log(`Car: ${this.brand} ${this.model} (${this.year}) > Speed: ${this.speed} km/h`);
     }
 }
-        
-//////////
 
-/*
-//EXERCICIO 1
-import { Person } from "./Person";
-function testExercicio1() {
-    const Person1 = new Person("Bruno", 29);
-    const Person2 = new Person("Maria", 30);
-    Person1.introduce();
-    Person2.introduce();
+----------------------------------------------------------------
+//EXERCICIO 3:
+export class BankAccount {
+    private owner: string;
+    private balance: number;
 
-    //Alterando idade:
-    Person1.setAge(26);
-    //Imprime a nova idade
-    console.log("Nova idade:");
-    Person1.introduce();
+    public constructor(owner: string, balance: number) {
+        this.owner = owner;
+        this.balance = balance;
+    }
+
+    // Getters
+    public getOwner(): string {
+        return this.owner;
+    }
+
+    public getBalance(): number {
+        return this.balance;
+    }
+
+    // Setters
+    public setOwner(newOwner: string): void {
+        this.owner = newOwner;
+    }
+
+    // Métodos
+    public deposit(value: number): void {
+        if (value > 0) {
+            this.balance = this.balance + value;
+            console.log(`Deposit of R$ ${value} made successfully.`);
+        } else {
+            console.log("The deposit must be greater than zero.");
+        }
+    }
+
+    public withdraw(value: number): void {
+        if (value > this.balance) {
+            console.log("Insufficient balance.");
+        } else if (value <= 0) {
+            console.log("The withdrawal must be greater than zero.");
+        } else {
+            this.balance = this.balance - value;
+            console.log(`Withdrawal of R$ ${value} made successfully.`);
+        }
+    }
+
+    public showBalance(): void {
+        console.log(`Owner: ${this.owner}`);
+        console.log(`Balance: R$ ${this.balance}`);
+    }
 }
 
-testExercicio1();
-*/
 
+--------------------------------------------------------------------------------------
+export class Product {
+    private name: string;
+    private price: number;
+    private stock: number;
 
-//EXERCICIO 2:
-import { Car } from "./Car";
+    public constructor(name: string, price: number, stock: number) {
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+    }
 
-function testExercicio2() {
-  const Car1 = new Car("Toyota", "Corolla", 2022);
-  Car1.accelerate(30);
-  Car1.accelerate(50);
-  Car1.showInformation();
+    // Getters
+    public getName(): string {
+        return this.name;
+    }
 
-  Car1.brake(40);
-  Car1.showInformation();
+    public getPrice(): number {
+        return this.price;
+    }
 
-  Car1.brake(100);
-  Car1.showInformation();
+    public getStock(): number {
+        return this.stock;
+    }
+
+    // Setters
+    public setName(newName: string): void {
+        this.name = newName;
+    }
+
+    public setPrice(newPrice: number): void {
+        if (newPrice >= 0) {
+            this.price = newPrice;
+        }
+    }
+
+    // Métodos
+    public addStock(quantity: number): void {
+        if (quantity > 0) {
+            this.stock = this.stock + quantity;
+            console.log(`${quantity} products added to stock.`);
+        } else {
+            console.log("The quantity must be greater than zero.");
+        }
+    }
+
+    public removeStock(quantity: number): void {
+        if (quantity > this.stock) {
+            console.log("There is not enough stock.");
+        } else if (quantity <= 0) {
+            console.log("The quantity must be greater than zero.");
+        } else {
+            this.stock = this.stock - quantity;
+            console.log(`${quantity} products removed from stock.`);
+        }
+    }
+
+    public showProduct(): void {
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: R$ ${this.price}`);
+        console.log(`Stock: ${this.stock}`);
+    }
 }
 
-testExercicio2();
+
+----------------------------------------------------------------------------------------------------
+//EXERCICIO 5
+export class Book {
+    private title: string;
+    private author: string;
+    private pages: number;
+    private available: boolean;
+
+    public constructor(
+        title: string,
+        author: string,
+        pages: number,
+        available: boolean
+    ) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.available = available;
+    }
+
+    // Getters
+    public getTitle(): string {
+        return this.title;
+    }
+
+    public getAuthor(): string {
+        return this.author;
+    }
+
+    public getPages(): number {
+        return this.pages;
+    }
+
+    public getAvailable(): boolean {
+        return this.available;
+    }
+
+    // Setters
+    public setTitle(newTitle: string): void {
+        this.title = newTitle;
+    }
+
+    public setAuthor(newAuthor: string): void {
+        this.author = newAuthor;
+    }
+
+    public setPages(newPages: number): void {
+        this.pages = newPages;
+    }
+
+    // Métodos
+    public borrow(): void {
+        if (this.available === true) {
+            this.available = false;
+            console.log(`The book "${this.title}" was borrowed.`);
+        } else {
+            console.log(`The book "${this.title}" is not available.`);
+        }
+    }
+
+    public returnBook(): void {
+        if (this.available === false) {
+            this.available = true;
+            console.log(`The book "${this.title}" was returned.`);
+        } else {
+            console.log(`The book "${this.title}" is already available.`);
+        }
+    }
+
+    public showInformation(): void {
+        console.log(`Title: ${this.title}`);
+        console.log(`Author: ${this.author}`);
+        console.log(`Pages: ${this.pages}`);
+        console.log(`Available: ${this.available}`);
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------
+//EXERCICIO 6:
+export class Student {
+    private name: string;
+    private grade1: number;
+    private grade2: number;
+
+    public constructor(name: string, grade1: number, grade2: number) {
+        this.name = name;
+        this.grade1 = grade1;
+        this.grade2 = grade2;
+    }
+
+    // Getters
+    public getName(): string {
+        return this.name;
+    }
+
+    public getGrade1(): number {
+        return this.grade1;
+    }
+
+    public getGrade2(): number {
+        return this.grade2;
+    }
+
+    // Setters
+    public setName(newName: string): void {
+        this.name = newName;
+    }
+
+    public setGrade1(newGrade1: number): void {
+        this.grade1 = newGrade1;
+    }
+
+    public setGrade2(newGrade2: number): void {
+        this.grade2 = newGrade2;
+    }
+
+    // Métodos
+    public calculateAverage(): number {
+        const average = (this.grade1 + this.grade2) / 2;
+
+        return average;
+    }
+
+    public approved(): boolean {
+        const average = this.calculateAverage();
+
+        if (average >= 7) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+//EXERCICIO 7
+export class Employee {
+    private name: string;
+    private salary: number;
+
+    public constructor(name: string, salary: number) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // Getters
+    public getName(): string {
+        return this.name;
+    }
+
+    public getSalary(): number {
+        return this.salary;
+    }
+
+    // Setters
+    public setName(newName: string): void {
+        this.name = newName;
+    }
+
+    public setSalary(newSalary: number): void {
+        if (newSalary >= 0) {
+            this.salary = newSalary;
+        }
+    }
+
+    // Métodos
+    public increaseSalary(percent: number): void {
+        if (percent > 0) {
+            const increase = this.salary * (percent / 100);
+
+            this.salary = this.salary + increase;
+
+            console.log(
+                `Salary increased by ${percent}%.`
+            );
+        } else {
+            console.log(
+                "The percentage must be greater than zero."
+            );
+        }
+    }
+
+    public showInformation(): void {
+        console.log(`Name: ${this.name}`);
+        console.log(`Salary: R$ ${this.salary}`);
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------
+//EXERCICIO 8
+export class Movie {
+    private title: string;
+    private duration: number;
+    private rating: number;
+
+    public constructor(
+        title: string,
+        duration: number,
+        rating: number
+    ) {
+        this.title = title;
+        this.duration = duration;
+        this.rating = rating;
+    }
+
+    // Getters
+    public getTitle(): string {
+        return this.title;
+    }
+
+    public getDuration(): number {
+        return this.duration;
+    }
+
+    public getRating(): number {
+        return this.rating;
+    }
+
+    // Setters
+    public setTitle(newTitle: string): void {
+        this.title = newTitle;
+    }
+
+    public setDuration(newDuration: number): void {
+        if (newDuration > 0) {
+            this.duration = newDuration;
+        }
+    }
+
+    public setRating(newRating: number): void {
+        if (newRating >= 0 && newRating <= 10) {
+            this.rating = newRating;
+        }
+    }
+
+    // Métodos
+    public changeRating(newRating: number): void {
+        if (newRating >= 0 && newRating <= 10) {
+            this.rating = newRating;
+
+            console.log(
+                `The rating of "${this.title}" was changed.`
+            );
+        } else {
+            console.log(
+                "The rating must be between 0 and 10."
+            );
+        }
+    }
+
+    public showMovie(): void {
+        console.log(`Title: ${this.title}`);
+        console.log(`Duration: ${this.duration} minutes`);
+        console.log(`Rating: ${this.rating}`);
+    }
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------
+//EXERCICIO 9
+export class Smartphone {
+    private brand: string;
+    private model: string;
+    private battery: number;
+
+    public constructor(brand: string, model: string) {
+        this.brand = brand;
+        this.model = model;
+        this.battery = 100;
+    }
+
+    // Getters
+    public getBrand(): string {
+        return this.brand;
+    }
+
+    public getModel(): string {
+        return this.model;
+    }
+
+    public getBattery(): number {
+        return this.battery;
+    }
+
+    // Setters
+    public setBrand(newBrand: string): void {
+        this.brand = newBrand;
+    }
+
+    public setModel(newModel: string): void {
+        this.model = newModel;
+    }
+
+    // Métodos
+    public use(minutes: number): void {
+        if (minutes > 0) {
+            this.battery = this.battery - minutes;
+
+            if (this.battery < 0) {
+                this.battery = 0;
+            }
+
+            console.log(
+                `The smartphone was used for ${minutes} minutes.`
+            );
+        } else {
+            console.log(
+                "The number of minutes must be greater than zero."
+            );
+        }
+    }
+
+    public charge(): void {
+        this.battery = 100;
+
+        console.log(
+            "The smartphone is fully charged."
+        );
+    }
+
+    public showInformation(): void {
+        console.log(`Brand: ${this.brand}`);
+        console.log(`Model: ${this.model}`);
+        console.log(`Battery: ${this.battery}%`);
+    }
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------
+//EXERCICIO 10
+export class LibraryMember {
+    private name: string;
+    private borrowedBooks: number;
+
+    public constructor(name: string) {
+        this.name = name;
+        this.borrowedBooks = 0;
+    }
+
+    // Getters
+    public getName(): string {
+        return this.name;
+    }
+
+    public getBorrowedBooks(): number {
+        return this.borrowedBooks;
+    }
+
+    // Setter
+    public setName(newName: string): void {
+        this.name = newName;
+    }
+
+    // Métodos
+    public borrowBook(): void {
+        if (this.borrowedBooks < 3) {
+            this.borrowedBooks = this.borrowedBooks + 1;
+
+            console.log(
+                `${this.name} borrowed a book.`
+            );
+        } else {
+            console.log(
+                `${this.name} cannot borrow more books. Maximum limit is 3.`
+            );
+        }
+    }
+
+    public returnBook(): void {
+        if (this.borrowedBooks > 0) {
+            this.borrowedBooks = this.borrowedBooks - 1;
+
+            console.log(
+                `${this.name} returned a book.`
+            );
+        } else {
+            console.log(
+                `${this.name} has no books to return.`
+            );
+        }
+    }
+
+    public showInformation(): void {
+        console.log(`Name: ${this.name}`);
+        console.log(
+            `Borrowed books: ${this.borrowedBooks}`
+        );
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
